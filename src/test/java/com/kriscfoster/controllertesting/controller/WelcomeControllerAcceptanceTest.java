@@ -9,6 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.springframework.http.HttpStatus.OK;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 class WelcomeControllerAcceptanceTest {
@@ -28,14 +29,14 @@ class WelcomeControllerAcceptanceTest {
     @Test
     void shouldGetDefaultWelcomeMessage() throws Exception {
         ResponseEntity responseEntity = restTemplate.getForEntity(url, String.class);
-        assertEquals(HttpStatus.OK, responseEntity.getStatusCode());
+        assertEquals(OK, responseEntity.getStatusCode());
         assertEquals("Welcome Stranger!", responseEntity.getBody());
     }
 
     @Test
     void shouldGetCustomWelcomeMessage() throws Exception {
         ResponseEntity responseEntity = restTemplate.getForEntity(url + "?name=John", String.class);
-        assertEquals(HttpStatus.OK, responseEntity.getStatusCode());
+        assertEquals(OK, responseEntity.getStatusCode());
         assertEquals("Welcome John!", responseEntity.getBody());
     }
 }
