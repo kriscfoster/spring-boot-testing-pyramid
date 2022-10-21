@@ -1,10 +1,10 @@
-package com.kriscfoster.controllertesting.controller;
+package com.bayo.controllertesting.controller;
 
-import com.kriscfoster.controllertesting.service.WelcomeService;
+import com.bayo.controllertesting.service.WelcomeService;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
 @RestController
 public class WelcomeController {
 

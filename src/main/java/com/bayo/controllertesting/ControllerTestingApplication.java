@@ -1,4 +1,4 @@
-package com.kriscfoster.controllertesting;
+package com.bayo.controllertesting;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

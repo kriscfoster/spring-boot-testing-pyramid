@@ -1,6 +1,6 @@
-package com.kriscfoster.controllertesting.controller;
+package com.bayo.controllertesting.controller;
 
-import com.kriscfoster.controllertesting.service.WelcomeService;
+import com.bayo.controllertesting.service.WelcomeService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;

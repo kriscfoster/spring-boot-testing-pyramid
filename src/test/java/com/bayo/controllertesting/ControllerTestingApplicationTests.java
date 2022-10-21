@@ -1,4 +1,4 @@
-package com.kriscfoster.controllertesting;
+package com.bayo.controllertesting;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
