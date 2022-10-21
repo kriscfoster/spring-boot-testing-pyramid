@@ -1,4 +1,4 @@
-package com.kriscfoster.controllertesting.controller;
+package com.bayo.controllertesting.controller;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
